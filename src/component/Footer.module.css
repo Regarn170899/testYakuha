@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,500;1,700&family=PT+Sans+Narrow:wght@400;700&display=swap');
+
+.container{
+    margin: 0 auto;
+    max-width: 1045px;
+    text-align: center;
+    justify-content: space-between;
+}
+.line{
+    margin-top: 10px;
+    background-image: url("../../img/Line3.svg");
+    height: 3px;
+    width: 962px;;
+}
+.content_footer{
+    padding-top: 27.5px;
+    display: flex;
+    padding-bottom: 45px;
+}
+.logo{
+    margin-top: -17px;
+}
+.text_logo{
+    margin-left: 2px;
+    font-family: 'Lora';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 23px;
+}
+
+.content_text{
+    margin-left: 35px;
+    text-align: left;
+}
+.name{
+    font-family: 'Lora';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 23px;
+}
+.discription{
+    font-family: 'PT Sans Narrow';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 23px;
+    max-width: 135px;
+}
+@media screen and (max-width: 768px){
+    .line{
+        width: 760px;;
+    }
+}

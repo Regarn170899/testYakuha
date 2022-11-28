@@ -1,0 +1,226 @@
+.header {
+    background-image: url('../../img/bgHeader.jpg');
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-position:center;
+    max-width: 100%;
+    max-height: 100%;
+}
+.container{
+    margin: 0px auto;
+    max-width: 1160px;
+}
+.top_container{
+    padding-top: 16px;
+    margin: 0px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between
+}
+li{
+    list-style-type: none;
+    color:white;
+}
+.menu{
+    display: flex;
+}
+li:not(:first-child){
+    margin-left: 35px;
+
+}
+.item{
+    font-family: 'Lora', serif;
+    font-size: 18px;
+}
+.logo{
+    width: 70px;
+    height: 62px;
+
+}
+.logo_container{
+    max-width: 75px;
+    max-height: 65px;
+    margin-right: 5px;
+
+}
+.logoText{
+    color:white;
+    font-family: 'Lora', serif;
+}
+.brand{
+    display: flex;
+    align-items: center;
+}
+/*Надпись Ирландия*/
+.Gtext{
+    padding-top: 203px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 771px;
+
+}
+.text{
+    font-size: 128px;
+    font-family: 'Lora', serif;
+    color: white;
+    margin: 0;
+    font-weight: 700;
+    line-height: 164px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
+}
+/*Погода*/
+.weather{
+    padding-top: 209px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.weather_text{
+    color: white;
+    font-family: 'Lora', serif;
+ }
+.weather_logo{
+    background-image: url("../../img/W_logo.svg");
+    width: 77px;
+    height: 76px;
+}
+.gradient{
+    width: 100%;
+    height: 57px;
+    background: linear-gradient(0deg, #FFFFFF 15.83%, rgba(255, 255, 255, 0) 85.63%);
+    padding-bottom: 8px;
+}
+/*бургер меню*/
+
+.burger_btn{
+    display: none;
+    width: 60px;
+    height: 45px;
+    left: 200px;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: .5s ease-in-out;
+    -moz-transition: .5s ease-in-out;
+    -o-transition: .5s ease-in-out;
+    transition: .5s ease-in-out;
+    cursor: pointer;
+}
+.burger_btn span{
+    position: absolute;
+    height: 3px;
+    width: 50px;
+    background: white;
+    border-radius: 0px;
+    opacity: 1;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: .25s ease-in-out;
+    -moz-transition: .25s ease-in-out;
+    -o-transition: .25s ease-in-out;
+    transition: .25s ease-in-out;
+}
+.burger_btn span:nth-child(1) {
+    top: 0px;
+}
+
+.burger_btn span:nth-child(2) {
+    top: 18px;
+}
+
+.burger_btn span:nth-child(3) {
+    top: 36px;
+}
+.burger_btn.open span:nth-child(1) {
+    top: 18px;
+    -webkit-transform: rotate(135deg);
+    -moz-transform: rotate(135deg);
+    -o-transform: rotate(135deg);
+    transform: rotate(135deg);
+}
+.burger_btn.open span:nth-child(2) {
+    opacity: 0;
+    left: -60px;
+}
+.burger_btn.open span:nth-child(3) {
+    top: 18px;
+    -webkit-transform: rotate(-135deg);
+    -moz-transform: rotate(-135deg);
+    -o-transform: rotate(-135deg);
+    transform: rotate(-135deg);
+}
+/*Разрешение 768*/
+@media screen and (max-width: 768px) {
+    .header{
+        background-image: url("../../img/bgHeaderAdap.jpg");
+    }
+    .container{
+        padding: 0 90px;
+        margin: 0px auto;
+        max-width: 721px;
+    }
+    .menu{
+        padding: 0;
+        position: relative;
+        top:70px;
+        flex-direction: column;
+        align-items: center;
+        transform: translateX(200%);
+    }
+    .menu.active{
+        flex-direction: column;
+        align-items: center;
+        transform: translateX(65%);
+        transition: .25s ease-in-out;
+    }
+    li:not(:first-child){
+        margin-top: 10px;
+        margin-left: 0px;
+    }
+    .burger_btn{
+        display: flex;
+        justify-content: end;
+        width: 60px;
+        height: 45px;
+        position: relative;
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+        -webkit-transition: .5s ease-in-out;
+        -moz-transition: .5s ease-in-out;
+        -o-transition: .5s ease-in-out;
+        transition: .5s ease-in-out;
+        cursor: pointer;
+    }
+    .logoText{
+        max-width: 150px;
+        font-size: 16px;
+    }
+    .text{
+        font-family: 'Lora';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 96px;
+        line-height: 123px;
+    }
+    .Gtext{
+        padding-top: 136px;
+    }
+    .weather{
+        padding-top: 100px;
+    }
+    .gradient{
+        height: 38px;
+        background: linear-gradient(0deg, #FFFFFF -9.17%, rgba(255, 255, 255, 0) 90.83%);
+    }
+
+
+
+
+}
