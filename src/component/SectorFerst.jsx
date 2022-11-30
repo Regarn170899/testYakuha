@@ -1,6 +1,6 @@
 import React from 'react';
 import s from './Sector_Ferst.module.css'
-const Sector_Ferst = () => {
+const SectorFerst = () => {
     return (
         <div className={s.sector}>
             <div className={s.content_container}>
@@ -62,4 +62,4 @@ const Sector_Ferst = () => {
     );
 };
 
-export default Sector_Ferst;
+export default SectorFerst;

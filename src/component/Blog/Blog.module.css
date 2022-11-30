@@ -1,17 +1,12 @@
 .header {
-    background-image: url('../../img/bgHeader.jpg');
-    background-repeat:no-repeat;
+    background-image: url('../../../img/slide2.jpg');
+    background-repeat:repeat;
     background-size: cover;
     background-position:center;
     max-width: 100%;
     max-height: 100%;
 }
-.link{
-    text-decoration: none;
-    color: #FFFFFF;
-}
 .container{
-
     margin: 0px auto;
     max-width: 1160px;
 }
@@ -22,25 +17,29 @@
     align-items: center;
     justify-content: space-between
 }
+.link{
+    text-decoration: none;
+    color: black;
+}
 li{
     list-style-type: none;
-
+    color: black;
 }
 .menu{
     display: flex;
+    color: black;
 }
 li:not(:first-child){
     margin-left: 35px;
-
 }
 .item{
     font-family: 'Lora', serif;
     font-size: 18px;
+    color: black;
 }
 .logo{
     width: 70px;
     height: 62px;
-
 }
 .logo_container{
     max-width: 75px;
@@ -49,53 +48,12 @@ li:not(:first-child){
 
 }
 .logoText{
-    color:white;
+    color: black;
     font-family: 'Lora', serif;
 }
 .brand{
     display: flex;
     align-items: center;
-}
-/*Надпись Ирландия*/
-.Gtext{
-    padding-top: 203px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto;
-    max-width: 771px;
-
-}
-.text{
-    font-size: 128px;
-    font-family: 'Lora', serif;
-    color: white;
-    margin: 0;
-    font-weight: 700;
-    line-height: 164px;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
-}
-/*Погода*/
-.weather{
-    padding-top: 209px;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-}
-.weather_text{
-    color: white;
-    font-family: 'Lora', serif;
- }
-.weather_logo{
-    background-image: url("../../img/W_logo.svg");
-    width: 77px;
-    height: 76px;
-}
-.gradient{
-    width: 100%;
-    height: 57px;
-    background: linear-gradient(0deg, #FFFFFF 15.83%, rgba(255, 255, 255, 0) 85.63%);
-    padding-bottom: 8px;
 }
 /*бургер меню*/
 
@@ -118,7 +76,7 @@ li:not(:first-child){
     position: absolute;
     height: 3px;
     width: 50px;
-    background: white;
+    background: black;
     border-radius: 0px;
     opacity: 1;
     -webkit-transform: rotate(0deg);
@@ -159,10 +117,10 @@ li:not(:first-child){
     -o-transform: rotate(-135deg);
     transform: rotate(-135deg);
 }
-/*Разрешение 768*/
+
 @media screen and (max-width: 768px) {
     .header{
-        background-image: url("../../img/bgHeaderAdap.jpg");
+        background-image: url("../../../img/slide2Adap.jpg");
     }
     .container{
         padding: 0 90px;

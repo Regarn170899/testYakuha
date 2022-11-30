@@ -1,19 +1,20 @@
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Header from "./component/Header";
-import Sector_Ferst from "./component/Sector_Ferst";
-import Sector_Second from "./component/Sector_Second";
-import Footer from "./component/Footer";
-
-
+import { Routes,Route,Link} from 'react-router-dom';
+import React, {useState} from "react";
+import Blog from "./component/Blog/Blog";
 
 function App() {
+    const [menuActive,setMenuActive]=useState(false);
   return (
+
     <div className={'App'}  >
-      <Header/>
-      <Sector_Ferst/>
-      <Sector_Second/>
-      <Footer/>
+        <Routes>
+            <Route path={'/'} element={<Header menuActive={menuActive} setMenuActive={setMenuActive}/>} />
+            <Route path={'/blog'} element={<Blog menuActive={menuActive} setMenuActive={setMenuActive}/>}/>
+        </Routes>
+
     </div>
   );
 }

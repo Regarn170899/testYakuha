@@ -1,11 +1,15 @@
 import React, {useState} from 'react';
 import s from './Header.module.css';
+import SectorFerst from "./SectorFerst";
+import SectorSecond from "./SectorSecond";
+import Footer from "./Footer";
+import {Link} from 'react-router-dom';
 
 
-const Header = () => {
-    const [menuActive,setMenuActive]=useState(false)
+const Header = ({menuActive,setMenuActive}) => {
     return (
-        <header className={s.header} >
+        <div>
+            <header className={s.header} >
                 <div className={s.container}>
                     <div className={s.top_container}>
                         <div className={s.brand}>
@@ -23,9 +27,9 @@ const Header = () => {
                             <span></span>
                         </div>
                         <ul className={menuActive?`${s.menu} ${s.active}`:s.menu}>
-                            <li className={s.item} href="#home">РАСПИСАНИЕ</li>
-                            <li className={s.item} href="#features">БЛОГ</li>
-                            <li className={s.item} href="#pricing">КОНТАКТЫ</li>
+                            <li className={s.item}><Link className={s.link} to="/">РАСПИСАНИЕ</Link></li>
+                            <li className={s.item}><Link className={s.link} to="/blog">БЛОГ</Link></li>
+                            <li className={s.item}><Link className={s.link} to="/pricing">КОНТАКТЫ</Link></li>
                         </ul>
                     </div>
                     <div className={s.Gtext}>
@@ -39,8 +43,13 @@ const Header = () => {
                         </div>
                     </div>
                 </div>
-            <div className={s.gradient}></div>
-        </header>
+                <div className={s.gradient}></div>
+            </header>
+            <SectorFerst/>
+            <SectorSecond/>
+            <Footer/>
+        </div>
+
     );
 };
 
