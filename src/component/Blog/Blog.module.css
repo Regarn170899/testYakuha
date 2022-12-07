@@ -1,10 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,500;1,700&family=PT+Sans+Narrow:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,500;1,700&display=swap');
 .header {
-    background-image: url('../../../img/slide2.jpg');
-    background-repeat:repeat;
-    background-size: cover;
-    background-position:center;
-    max-width: 100%;
-    max-height: 100%;
+    background-image: url('../../img/slide2.jpg'),url('../../img/slide2.jpg'),
+    url('../../img/slide2.jpg');
+    background-size: 100% 33%;
+    background-repeat: repeat;
+}
+.test{
+    width: 365px;
+    height: 365px;
 }
 .container{
     margin: 0px auto;
@@ -118,9 +122,38 @@ li:not(:first-child){
     transform: rotate(-135deg);
 }
 
+.gText{
+    padding-top: 80px;
+    margin: 0 auto;
+    text-align: center;
+    font-family: 'Lora';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 96px;
+    line-height: 123px;
+}
+.gTextDescription{
+    padding-top: 7px;
+    margin: 0 auto;
+    text-align: center;
+    font-family: 'Lora';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 51px;
+    text-align: center;
+
+}
+.cards{
+    padding-top: 60px;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
 @media screen and (max-width: 768px) {
     .header{
-        background-image: url("../../../img/slide2Adap.jpg");
+        background-image: url("../../img/slide2Adap.jpg");
     }
     .container{
         padding: 0 90px;

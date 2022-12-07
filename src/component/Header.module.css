@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,500;1,700&family=PT+Sans+Narrow:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,500;1,700&display=swap');
 .header {
-    background-image: url('../../img/bgHeader.jpg');
+    background-image: url('../img/bgHeader.jpg');
     background-repeat:no-repeat;
     background-size: cover;
     background-position:center;
@@ -87,7 +89,7 @@ li:not(:first-child){
     font-family: 'Lora', serif;
  }
 .weather_logo{
-    background-image: url("../../img/W_logo.svg");
+    background-image: url("../img/W_logo.svg");
     width: 77px;
     height: 76px;
 }
@@ -162,7 +164,7 @@ li:not(:first-child){
 /*Разрешение 768*/
 @media screen and (max-width: 768px) {
     .header{
-        background-image: url("../../img/bgHeaderAdap.jpg");
+        background-image: url("../img/bgHeaderAdap.jpg");
     }
     .container{
         padding: 0 90px;

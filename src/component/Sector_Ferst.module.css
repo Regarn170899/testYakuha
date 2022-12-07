@@ -4,7 +4,7 @@ p{
     padding: 0;
 }
 .sector{
-    background-image: url("../../img/slide2.jpg");
+    background-image: url("../img/slide2.jpg");
     background-repeat:no-repeat;
     background-size: cover;
     background-position:center;
@@ -22,7 +22,7 @@ p{
     font-size: 36px;
 }
 .line_top{
-    background-image: url("../../img/Line.svg");
+    background-image: url("../img/Line.svg");
     width: 45px;
     height: 2px;
     margin-left: 85px;
@@ -33,7 +33,7 @@ p{
 
 }
 .map{
-    background-image: url("../../img/map.svg");
+    background-image: url("../img/map.svg");
     width: 430px;
     height: 466px;
 }
@@ -59,7 +59,7 @@ p{
     max-width: 322px;
 }
 .btn_arow {
-    background-image: url("../../img/Arrow.svg");
+    background-image: url("../img/Arrow.svg");
     width: 52px;
     height: 30px;
     margin-left: 35px;
@@ -111,7 +111,7 @@ p{
     line-height: 46px;
 }
 .line{
-    background-image: url("../../img/Line.svg");
+    background-image: url("../img/Line.svg");
     width: 45px;
     height: 2px;
 }
@@ -127,13 +127,13 @@ p{
     padding-bottom: 22px;
 }
 .img_men{
-    background-image: url("../../img/men.jpg");
+    background-image: url("../img/men.jpg");
     width: 146px;
     height: 146px;
     border-radius: 50%;
 }
 .img_women{
-    background-image: url("../../img/women.png");
+    background-image: url("../img/women.png");
     width: 146px;
     height: 146px;
     border-radius: 50%;
@@ -170,7 +170,7 @@ p{
     margin-top: 0px;
 }
 .video{
-    background-image: url("../../img/video.svg");
+    background-image: url("../img/video.svg");
     width: 659px;
     height: 400px;
     margin-left: 68px;
@@ -178,7 +178,7 @@ p{
 }
 @media screen and (max-width: 768px){
     .sector{
-        background-image: url("../../img/slide2Adap.jpg");
+        background-image: url("../img/slide2Adap.jpg");
         background-repeat:repeat round;
         background-size:contain;
         background-position:center;

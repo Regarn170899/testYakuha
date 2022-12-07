@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,500;1,700&family=PT+Sans+Narrow:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,500;1,700&display=swap');
+.card{
+    margin:0 auto;
+    max-width: 365px;
+    text-align: center;
+}
+.cardImg{
+    border-radius: 30px;
+    width: 366px;
+    height: 366px;
+}
+.cardName{
+    font-family: 'Lora';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 51px;
+}
+.cardDescription{
+    margin-top: 6px;
+    font-family: 'PT Sans Narrow';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    text-align: center;
+}
+.CreatorsProfile{
+    margin-top: 13px;
+    display: flex;
+    align-items: center;
+}
+.personName{
+    margin-left: 15px;
+    color:#038C3E;
+    font-family: 'Lora';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+}
+.personData{
+    margin-left: 18px;
+    font-family: 'PT Sans Narrow';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 19px;
+}

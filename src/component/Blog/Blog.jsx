@@ -1,6 +1,19 @@
 import React from 'react';
 import s from './Blog.module.css';
 import {Link} from "react-router-dom";
+import Card from "./Card";
+import image1 from './../../img/blog1.jpg';
+import image2 from './../../img/blog2.png';
+import image3 from './../../img/blog3.png';
+import image4 from './../../img/blog4.png';
+import image5  from './../../img/blog5.jpg';
+import image6 from './../../img/blog6.jpg';
+import image7 from './../../img/blog7.png';
+import image8 from './../../img/blog8.png';
+import image9 from './../../img/blog9.png';
+
+
+import Footer from "../Footer";
 const Blog = ({menuActive,setMenuActive}) => {
     return (
         <header className={s.header} >
@@ -26,9 +39,23 @@ const Blog = ({menuActive,setMenuActive}) => {
                         <li className={s.item}><Link className={s.link} to="/pricing">КОНТАКТЫ</Link></li>
                     </ul>
                 </div>
-                <h1>ВОВА ГЕЙ</h1>
+                <h1 className={s.gText}>Блог</h1>
+                <p className={s.gTextDescription}>Самые интересные и сказочные места Ирландии</p>
+                <div className={s.cards}>
+                    <Card photo={image1}/>
+                    <Card photo={image2}/>
+                    <Card photo={image3}/>
+                    <Card photo={image4}/>
+                    <Card photo={image5}/>
+                    <Card photo={image6}/>
+                    <Card photo={image7}/>
+                    <Card photo={image8}/>
+                    <Card photo={image9}/>
+                </div>
+                <Footer/>
             </div>
-            <div className={s.gradient}></div>
         </header>
+
+
     );}
 export default Blog;
